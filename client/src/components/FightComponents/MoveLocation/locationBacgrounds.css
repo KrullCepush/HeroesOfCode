@@ -1,0 +1,80 @@
+/* --------------Руины--------------*/
+
+.location-going-layaout--ruins-0 {
+  background: url("/img/locations/ruins/1.png") no-repeat center;
+  background-size: cover;
+}
+
+.location-going-layaout--ruins-1 {
+  background: url("/img/locations/ruins/2.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+.location-going-layaout--ruins-2 {
+  background: url("/img/locations/ruins/3.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.location-going-layaout--ruins-3 {
+  background: url("/img/locations/ruins/4.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.location-going-layaout--ruins-4 {
+  background: url("/img/locations/ruins/5.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/* --------------Леса--------------*/
+
+.location-going-layaout--forest-0 {
+  background: url("/img/locations/forest/1.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+.location-going-layaout--forest-1 {
+  background: url("/img/locations/forest/2.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.location-going-layaout--forest-2 {
+  background: url("/img/locations/forest/3.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+.location-going-layaout--forest-3 {
+  background: url("/img/locations/forest/4.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.location-going-layaout--forest-4 {
+  background: url("/img/locations/forest/5.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+/* --------------Пещеры--------------*/
+
+.location-going-layaout--caves-0 {
+  background: url("/img/locations/caves/1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.location-going-layaout--caves-1 {
+  background: url("/img/locations/caves/2.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.location-going-layaout--caves-2 {
+  background: url("/img/locations/caves/3.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.location-going-layaout--caves-3 {
+  background: url("/img/locations/caves/4.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.location-going-layaout--caves-4 {
+  background: url("/img/locations/caves/5.jpg") no-repeat center;
+  background-size: cover;
+}

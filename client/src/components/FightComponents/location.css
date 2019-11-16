@@ -1,0 +1,54 @@
+.locations-bacground {
+  background: url(/img/bg.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.location-wrap {
+  padding-top: 5vh;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4vh;
+}
+
+.location-link {
+  position: relative;
+  width: 28%;
+}
+
+.location-link:hover {
+  text-decoration: none;
+}
+
+.location-link-layaout {
+  height: 70vh;
+  border: 10px solid rgb(80, 74, 71);
+  box-sizing: border-box;
+}
+
+.location-link-layaout--forest {
+  background: url("https://img2.akspic.ru/image/16260-ledyanaya_peshhera-formirovanie-speleoturizm-temnota-les-1680x1050.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+
+.location-link-layaout--ruins {
+  background: url("https://orig11.deviantart.net/54e7/f/2012/091/b/a/jungle_ruins_by_odobenus-d4ulq2o.png")
+    no-repeat center;
+  background-size: cover;
+}
+
+.location-link-layaout--caves {
+  background: url("http://img14.deviantart.net/c9a1/i/2013/215/4/d/forest_cave_by_niyuify-d6ftkyu.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+
+.location-link__desc {
+  font-size: 30px;
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+  color: blanchedalmond;
+  font-weight: 800;
+}

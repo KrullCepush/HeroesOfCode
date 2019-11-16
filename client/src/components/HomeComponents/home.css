@@ -1,0 +1,117 @@
+.home-wrap-bg {
+  min-height: 100vh;
+  background: url("https://www.tokkoro.com/picsup/1972225-superbrothers-sword-amp-sworcery__32.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+
+.home-wrap {
+  margin: 0 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-aside {
+  width: 17%;
+  min-height: 100vh;
+  background-color: rgb(187, 92, 37);
+  border-left: 15px outset orangered;
+  border-right: 15px outset orangered;
+  box-sizing: border-box;
+}
+
+.home-aside-link-wrap {
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+.home-aside__img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.home-aside__desc {
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  color: #000;
+}
+
+.home-main-wrap {
+  margin-right: 10%;
+  width: 60%;
+  height: 80vh;
+  margin-top: 5vh;
+}
+
+.home-main-wrap-closed {
+  margin-top: 30px;
+}
+
+.home-main-wrap-closed img {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: orange;
+  border-radius: 50%;
+  border: 5px outset orangered;
+}
+
+.shop-component-wrap {
+  background-color: rgb(187, 92, 37);
+  border: 15px outset orangered;
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.shop-header-wrap {
+  display: flex;
+  margin-bottom: 5vh;
+}
+
+.shop-header-player-avatar__img {
+  width: 120px;
+  height: 120px;
+  display: block;
+  border: 5px outset rgb(158, 144, 139);
+  box-sizing: border-box;
+}
+
+.shop-header-player-wrap {
+  margin-left: 30px;
+}
+
+.shop-header-player_name {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 20px;
+  cursor: default;
+}
+
+.shop-header-player_gold-img {
+  margin-right: 10px;
+}
+
+.shop-header-player_gold span {
+  font-size: 20px;
+  font-weight: 800;
+  cursor: default;
+}
+
+.shop-main-wrap {
+  border: 5px outset orangered;
+  height: 50vh;
+  background-color: rgb(211, 152, 76);
+}
+
+.shop-main-await {
+  cursor: default;
+  margin-top: 20vh;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}

@@ -1,0 +1,121 @@
+.main-page-wrap {
+  background: url("https://brand.incredibleart.ru/wp-content/uploads/2017/11/10688206825_dd5aa4d3a5_b-min.jpg")
+    no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.aside-wrap {
+  position: absolute;
+  height: 100vh;
+  width: 40px;
+  background-color: rgb(121, 57, 20);
+  cursor: pointer;
+  padding: 1px;
+}
+
+.aside-pic {
+  font-size: 35px;
+  font-weight: 800;
+  padding-left: 25%;
+  margin-top: 45vh;
+  cursor: pointer;
+  color: orangered;
+}
+
+.aside-wrap-true {
+  position: relative;
+  position: absolute;
+  background-size: cover;
+  width: 20%;
+  height: 100vh;
+  left: 5%;
+  background-color: rgb(121, 57, 20);
+  border-left: 15px solid orangered;
+  border-right: 15px solid orangered;
+  box-sizing: border-box;
+}
+
+.aside-bar {
+  padding-top: 15px;
+}
+
+.aside-wrap-btn {
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+.aside-wrap-btn-link {
+  text-align: center;
+  margin-top: 10px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.aside-wrap-btn img {
+  display: block;
+  margin: 0 auto;
+}
+
+.aside-btn-closed {
+  position: absolute;
+  bottom: 60px;
+  right: 25%;
+  border: 6px solid orangered;
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: 800;
+  background-color: rgb(223, 185, 62);
+  border-radius: 10px;
+}
+
+.wrap-auth {
+  padding-top: 10vh;
+  margin-left: 40%;
+  margin-right: 10%;
+}
+
+.auth-wrap {
+  border: 5px solid orangered;
+  border-radius: 15px;
+  background-color: rgb(223, 185, 62);
+  padding: 40px 0;
+}
+
+.auth-wrap h2 {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  cursor: default;
+}
+
+.auth-wrap input {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.auth-wrap button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-size: 22px;
+  border-radius: 10px;
+  padding: 5px 20px;
+  font-weight: 800;
+  border: 3px solid orangered;
+}
+
+.errorauth {
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(230, 18, 18, 0.3);
+  margin-top: 20px;
+  font-weight: 800;
+}

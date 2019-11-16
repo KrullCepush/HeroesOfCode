@@ -1,0 +1,49 @@
+.move-wrap {
+  height: 100vh;
+  padding: 1px;
+}
+
+.move-wrap a {
+  text-decoration: none;
+}
+
+.move-btn {
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 30px;
+  font-weight: 800;
+  border: 10px solid rgb(59, 56, 55);
+  background-color: rgba(18, 228, 235, 0.3);
+  color: rgb(197, 102, 24);
+  max-width: 330px;
+}
+
+.move-btn_link {
+  margin: 0 auto;
+  display: block;
+  max-width: 350px;
+}
+
+.move-btn_next {
+  margin-top: 70vh;
+}
+
+.move-btn_back {
+  margin-top: 2vh;
+}
+
+.location-going-fight {
+  min-height: 100vh;
+  padding-top: 10vh;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}

@@ -1,0 +1,7 @@
+export const START_FIGHT = "START_FIGHT";
+export const WIN_FIGHT = "WIN_FIGHT";
+export const CREATE_REGISTRATION = "CREATE_REGISTRATION";
+export const CREATE_LOGIN = "CREATE_LOGIN";
+export const ERROR_AUTH = "ERROR_AUTH";
+export const ACCEPT_AUTH = "ACCEPT_AUTH";
+export const UPDATE_PLAYER = "UPDATE_PLAYER";

@@ -1,0 +1,195 @@
+.pveboard-wrap {
+  margin: 0 10%;
+  display: flex;
+  height: 800px;
+  justify-content: space-around;
+}
+
+.pveboard-oponents {
+  width: 25%;
+}
+
+.oponent-wrap {
+  background-color: rgb(233, 108, 6);
+  border: 10px dashed rgb(81, 218, 236);
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  height: 800px;
+}
+.oponent-avatar {
+  padding-top: 30px;
+  margin-bottom: 60px;
+}
+.oponent-avatar img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.oponent-name {
+  font-weight: 800;
+  font-size: 26px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 300px;
+  height: 80px;
+}
+
+.oponent-stas__log {
+  font-weight: 800;
+  font-size: 24px;
+  margin-left: 10%;
+  margin-bottom: 30px;
+}
+
+.oponent-stas-wrap {
+  margin: 0 10%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: outset 5px rgb(81, 218, 236);
+}
+
+.oponent-stats {
+  font-weight: 800;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.oponent-stats span {
+  font-size: 20;
+  color: rgb(161, 42, 165);
+}
+
+.wrap-fight {
+  width: 40%;
+}
+
+.fight-status {
+  display: block;
+  margin: 0 auto;
+  font-weight: 800;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.fight-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.logs-wrap {
+  overflow: auto;
+  height: 600px;
+  background-color: rgba(168, 135, 25, 0.7);
+  border: 10px solid gray;
+  box-sizing: border-box;
+}
+
+.logs-elements {
+  list-style: disc;
+}
+
+.logs-element {
+  font-weight: 800;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.logs-elements--oponents {
+  font-weight: 800;
+  color: rgb(34, 92, 180);
+  font-size: 18px;
+}
+
+.logs-elements--damage {
+  font-weight: 800;
+  color: rgb(128, 0, 0);
+  font-size: 20px;
+}
+
+.fightApp-wrap {
+  padding-top: 6vh;
+  padding-bottom: 4vh;
+  min-height: 78vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fightApp-link {
+  width: 40%;
+  position: relative;
+}
+
+.fightApp-link--pve {
+  background: url(https://avatars.mds.yandex.net/get-pdb/163339/723cfaf8-5e7a-4941-b2cc-c9124497cadb/s1200?webp=false)
+    no-repeat center;
+  background-size: cover;
+  border: 10px solid rgb(80, 74, 71);
+  box-sizing: border-box;
+}
+
+.fightApp-link--pvp {
+  background: url(https://i.pinimg.com/originals/b2/35/ce/b235ce7cc566bb1da76ad2c7e49e603d.jpg)
+    no-repeat center;
+  background-size: cover;
+  border: 10px solid rgb(80, 74, 71);
+  box-sizing: border-box;
+}
+
+.fightApp-link--pvp__color {
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  height: 100%;
+}
+
+.fightApp-home {
+  display: block;
+  margin: 10px auto;
+  width: 900px;
+  border: 10px solid rgb(80, 74, 71);
+  border-radius: 20px;
+  background-color: rgba(190, 98, 22, 0.2);
+}
+
+.fightApp-home:hover {
+  text-decoration: none;
+}
+
+.fightApp-home__link {
+  height: 15vh;
+  margin-bottom: 9px;
+}
+
+.fightApp-home__link span {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+  font-weight: 800;
+  font-size: 40px;
+  letter-spacing: 10px;
+  color: rgb(80, 74, 71);
+}
+
+.list-fightApp-wrap {
+  background: url("https://steamuserimages-a.akamaihd.net/ugc/842584894586467886/3288949BD5D35B3BCFA9DE0B65FAADE54BBD701C/")
+    no-repeat center;
+  background-size: cover;
+  padding-bottom: 2vh;
+}
+
+.fightApp-link__desc {
+  font-size: 30px;
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+  font-weight: 800;
+  color: blanchedalmond;
+}
