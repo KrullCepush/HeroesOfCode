@@ -81,8 +81,7 @@ class MainPage extends React.Component {
             </div>
           </nav>
           <button className="aside-btn-closed" onClick={this.touchASide}>
-            {" "}
-            Closed{" "}
+            Closed
           </button>
         </div>
       </>

@@ -1,7 +1,8 @@
 .locations-bacground {
-  background: url(/img/bg.jpg) no-repeat center;
+  background: url("https://steamuserimages-a.akamaihd.net/ugc/842584894586467886/3288949BD5D35B3BCFA9DE0B65FAADE54BBD701C/")
+    no-repeat center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .location-wrap {
@@ -22,7 +23,7 @@
 
 .location-link-layaout {
   height: 70vh;
-  border: 10px solid rgb(80, 74, 71);
+  border: 13px outset rgb(165, 63, 12);
   box-sizing: border-box;
 }
 
@@ -45,10 +46,10 @@
 }
 
 .location-link__desc {
-  font-size: 30px;
+  font-size: 40px;
   position: absolute;
   bottom: 10%;
-  left: 25%;
+  left: 5%;
   color: blanchedalmond;
   font-weight: 800;
 }

@@ -7,6 +7,8 @@ import MoveLocation from "./FightComponents/MoveLocation/MoveLocation";
 import MainPage from "./mainPageComponents/MainPage";
 import HomeComponent from "./HomeComponents/HomeComponent";
 
+import "./style.css";
+
 class App extends React.Component {
   render() {
     return (

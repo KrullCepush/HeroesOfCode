@@ -82,4 +82,9 @@ router.route("/registration").post(async (req, res) => {
   }
 });
 
+router.get("/logout", async (req, res) => {
+  req.session.destroy();
+  res.json(true);
+});
+
 module.exports = router;

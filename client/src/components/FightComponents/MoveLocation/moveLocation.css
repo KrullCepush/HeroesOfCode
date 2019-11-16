@@ -1,5 +1,5 @@
 .move-wrap {
-  height: 100vh;
+  min-height: 100vh;
   padding: 1px;
 }
 
@@ -10,15 +10,16 @@
 .move-btn {
   display: block;
   margin: 0 auto;
-  box-sizing: border-box;
-  padding: 10px;
-  border-radius: 30px;
+  padding: 10px 20px;
+  border-radius: 15px;
   font-size: 30px;
   font-weight: 800;
-  border: 10px solid rgb(59, 56, 55);
-  background-color: rgba(18, 228, 235, 0.3);
-  color: rgb(197, 102, 24);
-  max-width: 330px;
+  border: 10px outset rgb(165, 63, 12);
+  box-sizing: border-box;
+  background-color: rgb(235, 134, 18);
+  color: rgb(5, 5, 5);
+  max-width: 360px;
+  min-width: 300px;
 }
 
 .move-btn_link {

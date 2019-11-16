@@ -27,7 +27,9 @@ class ShopComponent extends React.Component {
           </div>
         </div>
         <div className="shop-main-wrap">
-          <div className="shop-main-await">Контент временно недоступен</div>
+          <div className="shop-main-await">
+            The content is currently unavailable
+          </div>
           {/* Заглушка, позже убрать */}
         </div>
       </div>

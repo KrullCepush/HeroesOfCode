@@ -124,22 +124,20 @@
 .fightApp-link {
   width: 40%;
   position: relative;
+  border: 10px outset rgb(165, 63, 12);
+  box-sizing: border-box;
 }
 
 .fightApp-link--pve {
   background: url(https://avatars.mds.yandex.net/get-pdb/163339/723cfaf8-5e7a-4941-b2cc-c9124497cadb/s1200?webp=false)
     no-repeat center;
   background-size: cover;
-  border: 10px solid rgb(80, 74, 71);
-  box-sizing: border-box;
 }
 
 .fightApp-link--pvp {
   background: url(https://i.pinimg.com/originals/b2/35/ce/b235ce7cc566bb1da76ad2c7e49e603d.jpg)
     no-repeat center;
   background-size: cover;
-  border: 10px solid rgb(80, 74, 71);
-  box-sizing: border-box;
 }
 
 .fightApp-link--pvp__color {
@@ -152,10 +150,10 @@
 .fightApp-home {
   display: block;
   margin: 10px auto;
-  width: 900px;
-  border: 10px solid rgb(80, 74, 71);
+  width: 60%;
+  border: 10px outset rgb(121, 44, 6);
   border-radius: 20px;
-  background-color: rgba(190, 98, 22, 0.2);
+  background-color: rgb(221, 127, 50);
 }
 
 .fightApp-home:hover {
@@ -163,7 +161,7 @@
 }
 
 .fightApp-home__link {
-  height: 15vh;
+  height: 140px;
   margin-bottom: 9px;
 }
 
@@ -174,22 +172,22 @@
   padding-top: 50px;
   font-weight: 800;
   font-size: 40px;
-  letter-spacing: 10px;
-  color: rgb(80, 74, 71);
+  letter-spacing: 4px;
+  color: rgb(0, 0, 0);
 }
 
 .list-fightApp-wrap {
   background: url("https://steamuserimages-a.akamaihd.net/ugc/842584894586467886/3288949BD5D35B3BCFA9DE0B65FAADE54BBD701C/")
     no-repeat center;
   background-size: cover;
-  padding-bottom: 2vh;
+  min-height: 100vh;
 }
 
 .fightApp-link__desc {
-  font-size: 30px;
+  left: 5%;
+  font-size: 40px;
   position: absolute;
   bottom: 10%;
-  left: 30%;
   font-weight: 800;
   color: blanchedalmond;
 }

@@ -36,6 +36,11 @@ class HomeComponent extends React.Component {
     });
   };
 
+  logOut = async () => {
+    await fetch("users/logout");
+    this.props.history.push("/");
+  };
+
   render() {
     return (
       <div className="home-wrap-bg">
@@ -97,7 +102,7 @@ class HomeComponent extends React.Component {
               />
               <div className="home-aside__desc"> Alchemy </div>
             </div>
-            <div className="home-aside-link-wrap">
+            <div className="home-aside-link-wrap" onClick={this.logOut}>
               <img
                 src="/img/header/auth/logout.png"
                 alt="logout"

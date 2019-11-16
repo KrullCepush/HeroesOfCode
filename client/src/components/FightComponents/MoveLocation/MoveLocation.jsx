@@ -34,7 +34,12 @@ class MoveLocation extends React.Component {
     }
   };
 
-  componentDidMount() {
+  async componentDidMount() {
+    const checkSession = await fetch("/users/checksession");
+    const req = await checkSession.json();
+    if (req.status !== true) {
+      this.props.history.push("/");
+    }
     const params = this.props.match.params.location;
     const playerInitial = JSON.parse(JSON.stringify(this.props.player));
     this.setState({
@@ -62,11 +67,11 @@ class MoveLocation extends React.Component {
       >
         <div className="move-wrap">
           <button className="move-btn move-btn_next" onClick={this.moveNext}>
-            Двигаться дальше
+            Move deeper
           </button>
-          <Link className="move-btn_link" to="/">
+          <Link className="move-btn_link" to="/home">
             <button className="move-btn move-btn_back" onClick={this.moveNext}>
-              Вернуться в город
+              Back to village
             </button>
           </Link>
         </div>
@@ -81,11 +86,4 @@ function mapStateToProps(store) {
   };
 }
 
-function mapDispatchToProps(dispatch) {
-  // return {};
-}
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(MoveLocation);
+export default connect(mapStateToProps)(MoveLocation);

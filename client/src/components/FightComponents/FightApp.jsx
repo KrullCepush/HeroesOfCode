@@ -3,6 +3,14 @@ import { Link } from "react-router-dom";
 import "./pveboard.css";
 
 class FightApp extends React.Component {
+  async componentDidMount() {
+    const checkSession = await fetch("/users/checksession");
+    const req = await checkSession.json();
+    if (req.status !== true) {
+      this.props.history.push("/");
+    }
+  }
+
   render() {
     return (
       <>
@@ -12,7 +20,7 @@ class FightApp extends React.Component {
               to="/figth/pve/locations"
               className="fightApp-link fightApp-link--pve"
             >
-              <div className="fightApp-link__desc">Темные земли</div>
+              <div className="fightApp-link__desc">ShadowLands</div>
             </Link>
             <Link
               to="#"
@@ -20,13 +28,13 @@ class FightApp extends React.Component {
               title="Временно недоступно"
             >
               <div className="fightApp-link--pvp__color">
-                <div className="fightApp-link__desc">Городская арена</div>
+                <div className="fightApp-link__desc">Arena of shadows</div>
               </div>
             </Link>
           </div>
           <Link to="/" className="fightApp-home">
             <div className="fightApp-home__link">
-              <span>Вернуться...</span>
+              <span>Return back</span>
             </div>
           </Link>
         </div>
