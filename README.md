@@ -21,3 +21,6 @@ GitHub, Trello
 ### Скрины:
 
 ![](/screen/auth.png)
+![](/screen/fight.png)
+![](/screen/home.png)
+![](/screen/move.png)
