@@ -6,6 +6,8 @@ import PvEBoard from "../PvEContant/PvEBoard";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
+import { UpdateHomeAC } from "../../../redux/actions";
+
 class MoveLocation extends React.Component {
   constructor(props) {
     super(props);
@@ -13,7 +15,8 @@ class MoveLocation extends React.Component {
       player: null,
       locationImage: 0,
       fight: false,
-      locationParams: ""
+      locationParams: "",
+      locationLogs: ""
     };
   }
   moveNext = () => {
@@ -26,10 +29,23 @@ class MoveLocation extends React.Component {
         locationImage: number
       });
     }
-    const random = Math.floor(Math.random() * 3);
-    if (random === 2) {
+    const random = Math.floor(Math.random() * 5);
+    if (random === 4) {
       this.setState({
         fight: true
+      });
+    } else if (random === 3) {
+      const updatePlayer = this.state.player;
+      const damageTrap = Math.floor(
+        (updatePlayer.stats.health * Math.floor(Math.random() * 10)) / 100
+      );
+      updatePlayer.stats.health -= damageTrap;
+      this.setState({
+        locationLogs: `I fell into the trap and got ${damageTrap} points of damage`
+      });
+    } else {
+      this.setState({
+        locationLogs: "There is nothing here, we must go on"
       });
     }
   };
@@ -39,6 +55,11 @@ class MoveLocation extends React.Component {
     const req = await checkSession.json();
     if (req.status !== true) {
       this.props.history.push("/");
+    } else {
+      this.props.updateStore(req.player);
+      this.setState({
+        player: req.player
+      });
     }
     const params = this.props.match.params.location;
     const playerInitial = JSON.parse(JSON.stringify(this.props.player));
@@ -63,17 +84,35 @@ class MoveLocation extends React.Component {
 
     return (
       <div
-        className={`location-going-layaout--${this.state.locationParams}-${this.state.locationImage}`}
+        className={`location-going-layaout location-going-layaout--${this.state.locationParams}-${this.state.locationImage}`}
       >
-        <div className="move-wrap">
-          <button className="move-btn move-btn_next" onClick={this.moveNext}>
-            Move deeper
-          </button>
-          <Link className="move-btn_link" to="/home">
-            <button className="move-btn move-btn_back" onClick={this.moveNext}>
-              Back to village
+        <div className="move-int-wrap">
+          <div className="move-int move-int__logs">
+            {this.state.locationLogs}
+          </div>
+          <div className="move-wrap">
+            <button className="move-btn move-btn_next" onClick={this.moveNext}>
+              Move deeper
             </button>
-          </Link>
+            <Link className="move-btn_link" to="/home">
+              <button
+                className="move-btn move-btn_back"
+                onClick={this.moveNext}
+              >
+                Back to village
+              </button>
+            </Link>
+          </div>
+          <div className="move-int move-int__stats">
+            <div className="move-int__stats-wrap">
+              <img src="/img/stats/health.png" alt="health" />
+              <span>{this.state.player && this.state.player.stats.health}</span>
+            </div>
+            <div className="move-int__stats-wrap">
+              <img src="/img/stats/sword.png" alt="damage" />
+              <span>{this.state.player && this.state.player.stats.damage}</span>
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -86,4 +125,10 @@ function mapStateToProps(store) {
   };
 }
 
-export default connect(mapStateToProps)(MoveLocation);
+function mapDispatchToProps(dispatch) {
+  return {
+    updateStore: player => dispatch(UpdateHomeAC(player))
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(MoveLocation);

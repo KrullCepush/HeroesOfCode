@@ -1,6 +1,6 @@
 import {
   START_FIGHT,
-  WIN_FIGHT,
+  END_FIGHT,
   CREATE_REGISTRATION,
   ERROR_AUTH,
   CREATE_LOGIN,
@@ -88,16 +88,34 @@ const StartFightAC = () => {
   };
 };
 
-const winFightAC = goldValue => {
+const EndFightAC = req => {
   return {
-    type: WIN_FIGHT,
-    gold: goldValue
+    type: END_FIGHT
+  };
+};
+
+const EndFightFunctionAC = (goldValue, playerName) => {
+  return async dispatch => {
+    const data = {
+      gold: goldValue,
+      player: playerName
+    };
+    const res = await fetch("/endfight", {
+      method: "put",
+      headers: {
+        Accept: "aplication/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+    const req = await res.json();
+    dispatch(EndFightAC(req));
   };
 };
 
 export {
   StartFightAC,
-  winFightAC,
+  EndFightFunctionAC,
   setRegistrationFunctionAC,
   setLoginFunctionAC,
   UpdateHomeAC

@@ -16,6 +16,8 @@ class HomeComponent extends React.Component {
   async componentDidMount() {
     const checkSession = await fetch("/users/checksession");
     const req = await checkSession.json();
+    console.log(req);
+
     if (req.status !== true) {
       this.props.history.push("/");
     } else {

@@ -5,7 +5,7 @@ const bcrypt = require("bcrypt");
 
 /* GET users listing. */
 
-router.get("/checksession", (req, res) => {
+router.get("/checksession", async (req, res) => {
   const user = req.session.user;
 
   if (user === undefined) {
@@ -13,9 +13,11 @@ router.get("/checksession", (req, res) => {
       status: false
     });
   } else {
+    const initialUser = await User.findOne({ username: user.username });
+
     res.json({
       status: true,
-      player: user.player
+      player: initialUser.player
     });
   }
 });

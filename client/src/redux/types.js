@@ -1,5 +1,5 @@
 export const START_FIGHT = "START_FIGHT";
-export const WIN_FIGHT = "WIN_FIGHT";
+export const END_FIGHT = "END_FIGHT";
 export const CREATE_REGISTRATION = "CREATE_REGISTRATION";
 export const CREATE_LOGIN = "CREATE_LOGIN";
 export const ERROR_AUTH = "ERROR_AUTH";

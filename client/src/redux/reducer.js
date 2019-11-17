@@ -1,6 +1,6 @@
 import {
   START_FIGHT,
-  WIN_FIGHT,
+  END_FIGHT,
   ERROR_AUTH,
   CREATE_REGISTRATION,
   ACCEPT_AUTH,
@@ -62,12 +62,9 @@ export default function(state = initialState, action) {
       };
     }
 
-    case WIN_FIGHT: {
-      const inialPlayer = state.player;
-      inialPlayer.gold += action.gold;
+    case END_FIGHT: {
       return {
-        ...state,
-        player: inialPlayer
+        ...state
       };
     }
 

@@ -224,3 +224,8 @@
 .fightApp-btn__home-link:hover {
   text-decoration: none;
 }
+
+.move-int-wrap {
+  display: flex;
+  justify-content: space-between;
+}

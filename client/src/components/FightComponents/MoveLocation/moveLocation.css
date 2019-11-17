@@ -1,6 +1,6 @@
-.move-wrap {
-  min-height: 100vh;
+.location-going-layaout {
   padding: 1px;
+  min-height: 100vh;
 }
 
 .move-wrap a {
@@ -29,16 +29,50 @@
 }
 
 .move-btn_next {
-  margin-top: 70vh;
+  margin-top: 15vh;
 }
 
 .move-btn_back {
-  margin-top: 2vh;
+  margin-top: 20px;
 }
 
 .location-going-fight {
   min-height: 100vh;
   padding-top: 10vh;
+}
+
+.move-int-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6%;
+  margin-top: 55vh;
+}
+
+.move-int {
+  width: 30%;
+  height: 40vh;
+  border: 10px outset rgb(121, 44, 6);
+  background-color: rgb(221, 127, 50);
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.move-int__stats-wrap {
+  margin-top: 40px;
+  border: 5px outset gray;
+  padding-left: 30px;
+}
+
+.move-int__stats-wrap span {
+  margin-left: 40px;
+  font-size: 25px;
+}
+
+.move-int__logs {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  padding-top: 80px;
 }
 
 button:active,
