@@ -65,7 +65,8 @@ router.route("/registration").post(async (req, res) => {
           health: 300,
           damage: 10
         },
-        gold: 30
+        gold: 30,
+        xp: 0
       }
     });
     await user.save();

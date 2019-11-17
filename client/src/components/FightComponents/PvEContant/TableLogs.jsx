@@ -6,7 +6,7 @@ class TableLogs extends React.Component {
   get dontGenerateLogs() {
     return (
       <ul className="logs-elements">
-        <li> Ожидание начала боя </li>
+        <li className="await-fight"> Await starting fight </li>
       </ul>
     );
   }

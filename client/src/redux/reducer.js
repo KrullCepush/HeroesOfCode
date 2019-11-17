@@ -20,7 +20,8 @@ const initialState = {
       health: 300,
       damage: 10
     },
-    gold: 0
+    gold: 0,
+    xp: 0
   },
   errorAuth: null
 };

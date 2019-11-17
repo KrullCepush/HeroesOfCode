@@ -11,20 +11,22 @@
 
 .oponent-wrap {
   background-color: rgb(233, 108, 6);
-  border: 10px dashed rgb(81, 218, 236);
+  border: 10px outset rgb(121, 44, 6);
   padding-bottom: 20px;
   box-sizing: border-box;
   height: 800px;
 }
 .oponent-avatar {
   padding-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .oponent-avatar img {
   display: block;
   width: 300px;
   height: 300px;
   margin: 0 auto;
+  border: 15px outset rgb(95, 88, 84);
+  box-sizing: border-box;
 }
 
 .oponent-name {
@@ -48,7 +50,7 @@
   margin: 0 10%;
   padding: 10px;
   box-sizing: border-box;
-  border: outset 5px rgb(81, 218, 236);
+  border: 10px outset rgb(95, 88, 84);
 }
 
 .oponent-stats {
@@ -58,8 +60,9 @@
 }
 
 .oponent-stats span {
-  font-size: 20;
+  font-size: 25px;
   color: rgb(161, 42, 165);
+  margin-left: 10px;
 }
 
 .wrap-fight {
@@ -71,8 +74,11 @@
   margin: 0 auto;
   font-weight: 800;
   font-size: 30px;
-  padding: 20px;
   text-align: center;
+  background-color: rgb(221, 127, 50);
+  border: 10px outset rgb(121, 44, 6);
+  margin-bottom: 30px;
+  padding: 10px;
 }
 
 .fight-btn {
@@ -81,13 +87,16 @@
   padding: 10px;
   font-weight: 800;
   font-size: 30px;
+  background-color: rgb(221, 127, 50);
+  border: 10px outset rgb(121, 44, 6);
+  min-width: 300px;
 }
 
 .logs-wrap {
   overflow: auto;
-  height: 600px;
-  background-color: rgba(168, 135, 25, 0.7);
-  border: 10px solid gray;
+  height: 535px;
+  background-color: rgb(221, 127, 50);
+  border: 15px outset rgb(121, 44, 6);
   box-sizing: border-box;
 }
 
@@ -190,4 +199,28 @@
   bottom: 10%;
   font-weight: 800;
   color: blanchedalmond;
+}
+
+.await-fight {
+  font-size: 26px;
+  padding: 20px;
+  font-weight: 800;
+  list-style-type: none;
+}
+
+.fightApp-btn__home {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  font-weight: 800;
+  font-size: 30px;
+  background-color: rgb(221, 127, 50);
+  border: 10px outset rgb(121, 44, 6);
+  min-width: 300px;
+  color: #000;
+  text-align: center;
+}
+
+.fightApp-btn__home-link:hover {
+  text-decoration: none;
 }

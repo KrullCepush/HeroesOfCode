@@ -32,7 +32,7 @@ class FightApp extends React.Component {
               </div>
             </Link>
           </div>
-          <Link to="/" className="fightApp-home">
+          <Link to="/home" className="fightApp-home">
             <div className="fightApp-home__link">
               <span>Return back</span>
             </div>

@@ -79,7 +79,7 @@ class PvEBoard extends React.Component {
     return (
       <>
         <button className="fight-btn" onClick={this.goToRun}>
-          Отступить
+          Go away
         </button>
       </>
     );
@@ -89,7 +89,7 @@ class PvEBoard extends React.Component {
     return (
       <>
         <button className="fight-btn" onClick={this.goToFight}>
-          Начать бой
+          Fight
         </button>
       </>
     );
@@ -131,8 +131,8 @@ class PvEBoard extends React.Component {
             {this.state.statusFight === "hold" ? (
               " "
             ) : (
-              <Link to="/">
-                <div className="fightApp-btn__home">Домой</div>
+              <Link className="fightApp-btn__home-link" to="/">
+                <div className="fightApp-btn__home">Go to vilage</div>
               </Link>
             )}
           </div>
@@ -152,9 +152,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default withRouter(
-  connect(
-    null,
-    mapDispatchToProps
-  )(PvEBoard)
-);
+export default withRouter(connect(null, mapDispatchToProps)(PvEBoard));
